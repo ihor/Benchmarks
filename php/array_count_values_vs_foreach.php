@@ -12,7 +12,7 @@ function generateData() {
         }
     }
     shuffle($data);
-    
+
     return $data;
 }
 
