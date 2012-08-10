@@ -28,7 +28,7 @@ function tests($func, $args, $tests = 10, $repeat = 1000, $displayArgs = false) 
         $in += test($func, $args, $repeat, $displayArgs);
     }
     
-    say(sprintf('Average: %.2f ms', $in * 1000));
+    say(sprintf('Average: %.2f ms', $in * 1000 / $tests));
 }
 
 function cases($func, $cases, $repeat = 1000, $displayArgs = false) {
