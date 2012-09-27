@@ -8,8 +8,7 @@ function for_next_check($array) {
   return is_null(key($array));
 }
 
-function array_key_exists_check($array)
-{
+function array_key_exists_check($array) {
     for ($index = 0, $maxIndex = count($array) - 1; $index <= $maxIndex; $index++) {
         if (!array_key_exists($index, $array)) {
             return true;
