@@ -1,5 +1,8 @@
+import sys
+sys.path.insert(0, '../')
+
 import time
-from utils.generators import *
+from utils import *
 from redis import ConnectionPool, Redis
 from random import sample
 from optparse import OptionParser
